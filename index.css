@@ -13,6 +13,24 @@
     display: flex;
   }
 
+  nav {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  header {
+    background-color: rgba(46, 64, 143, 0.466);
+  }
   /***** SECTION 1 ******/
   #home {
     background: url('squareresults_bcg.jpg');
@@ -193,6 +211,10 @@
       height: 250px;
       width: 250px;
       border-radius: 50%;
+      background-color: transparent;
+    }
+    
+    header {
       background-color: transparent;
     }
   }
