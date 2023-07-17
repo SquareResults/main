@@ -200,10 +200,6 @@
     .upcoming-text {
       padding-top: 10vh;
     }
-
-    section {
-      padding: 0px;
-    }
   }
 
   @media only screen and (max-width: 992px) {
@@ -333,4 +329,7 @@
      #services-container {
       margin-bottom: 5px;
     }
+    #services {
+      height: 220vh;
+  }
 }
