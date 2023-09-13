@@ -363,3 +363,7 @@
   width: auto;
   min-height: 40vh/* Add a min-height to ensure the section doesn't collapse */
 }
+
+ul.a {
+  list-style-type: square;
+}
