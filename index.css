@@ -364,6 +364,10 @@
   min-height: 40vh/* Add a min-height to ensure the section doesn't collapse */
 }
 
-ul.a {
+.bulletpoint {
   list-style-type: square;
+}
+
+.nav-item {
+  list-style-type: none;
 }
