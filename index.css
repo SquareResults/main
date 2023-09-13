@@ -333,3 +333,33 @@
       height: 225vh;
   }
 }
+
+/************ CAREERS PAGE ************/
+.careers-body {
+  background-color: #3256ac;
+}
+
+.careers-main {
+  margin-top: 50px;
+  height: 500px;
+}
+
+.careers-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.careers-block {
+  background-color: white;
+  padding: 50px;
+}
+
+.top-image {
+  background: url('careers_img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  width: auto;
+  min-height: 40vh/* Add a min-height to ensure the section doesn't collapse */
+}
