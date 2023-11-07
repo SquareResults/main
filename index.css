@@ -373,10 +373,13 @@
 }
 
 /******** UPCOMING EVENTS *********/
+
 #upcoming-events {
-  padding-top: 10vh;
-  color: white;
+  padding-top: 15vh;
   background-color: #3256ac;
+  color: white;
+  width: 100%;
+  height: 50vh;
 }
 
 .events-title {
