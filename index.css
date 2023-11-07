@@ -371,3 +371,19 @@
 .nav-item {
   list-style-type: none;
 }
+
+/******** UPCOMING EVENTS *********/
+#upcoming-events {
+  padding-top: 10vh;
+  color: white;
+  background-color: #3256ac;
+}
+
+.events-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  /*transform: translateY(-40%);*/
+  margin-bottom: 5vh;
+}
