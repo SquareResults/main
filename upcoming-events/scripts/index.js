@@ -12,21 +12,21 @@ window.onclick = function (event) {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyrRUAcHfEPy39Y-IeXaZ_4h5chly1fOQ99MnFzRM8gH_I60bUTNNxs0k5lr3adnarhDQ/exec'
 
     form.addEventListener('submit', e => {
-    submitButton.disabled = true
-    e.preventDefault()
-    let requestBody = new FormData(form)
-    fetch(scriptURL, { method: 'POST', body: requestBody})
-        .then(response => {
-            document.getElementById("my-form").addEventListener("submit", function (e) {
-                e.preventDefault(); // Prevent the form from actually submitting
-                // Show the modal
-                document.getElementById("myModal").style.display = "block";
-            });          
-            submitButton.disabled = false
-        })
-        .catch(error => {
-        alert('Error!', error.message)
-        submitButton.disabled = false
-        }
-        )
-    })
+        e.preventDefault();
+        submitButton.disabled = true;
+    
+        let requestBody = new FormData(form);
+        document.getElementById("myModal").style.display = "block"; 
+        fetch(scriptURL, { method: 'POST', body: requestBody })
+            .then(response => {
+                // Handle the fetch response here
+                document.getElementById("myModal").style.display = "block"; // Show the modal
+            })
+            .catch(error => {
+                console.error('Error!', error);
+                // Handle errors here
+            })
+            .finally(() => {
+                submitButton.disabled = false; // Enable the button regardless of success or error
+            });
+    });
