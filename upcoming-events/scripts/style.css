@@ -51,8 +51,3 @@ form {
     margin-bottom: 5vh;
     width: 600px;
 }
-
-textarea {
-  width: 100%; /* Set the width to 100% of its container */
-  resize: both; /* Allow both horizontal and vertical resizing */
-}
